@@ -10,9 +10,11 @@
         android:id="@+id/tvSensorData"
         android:layout_width="143dp"
         android:layout_height="78dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="54dp"
         android:text="TextView"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="89dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
