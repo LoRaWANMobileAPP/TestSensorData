@@ -3,7 +3,12 @@
     <style name="Base.Theme.TestSensorData" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:colorBackground">@color/Main_background4</item>
+        <item name="android:textColor">@color/Text_color4</item>
     </style>
 
+
     <style name="Theme.TestSensorData" parent="Base.Theme.TestSensorData" />
+
 </resources>
