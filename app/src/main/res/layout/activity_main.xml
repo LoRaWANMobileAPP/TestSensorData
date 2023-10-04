@@ -7,6 +7,40 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvOutdoorSensorLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Outdoor Temp:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvOutdoorSensorLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvOutdoorSensorLabel" />
+
+    <TextView
+        android:id="@+id/tvHumIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvIndoorSensorHumLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvSensorData" />
+
+    <TextView
+        android:id="@+id/tvIndoorSensorHumLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Indoor Humidity:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvIndoorSensorLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvIndoorSensorLabel" />
+
+    <TextView
         android:id="@+id/tvOutdoorSensorLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,20 +48,8 @@
         android:text="Outdoor Temp:"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvIndoorSensorLabel"
-        app:layout_constraintTop_toBottomOf="@+id/tvIndoorSensorLabel" />
-
-    <TextView
-        android:id="@+id/tvIndoorSensorLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
-        android:text="Indoor Temp:"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/tvIndoorSensorHumLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvIndoorSensorHumLabel" />
 
     <TextView
         android:id="@+id/tvTempOut"
@@ -39,28 +61,41 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tvOutdoorSensorLabel"
-        app:layout_constraintTop_toBottomOf="@+id/tvSensorData" />
+        app:layout_constraintTop_toBottomOf="@+id/tvHumIn" />
+
+    <TextView
+        android:id="@+id/tvIndoorSensorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:text="Indoor Temp:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvSensorData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="50dp"
         android:text="TextView"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tvIndoorSensorLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/tvIndoorSensorLabel" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="409dp"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvOutdoorSensorLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTempOut" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

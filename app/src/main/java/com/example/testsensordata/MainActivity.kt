@@ -45,4 +45,8 @@ class MainActivity : AppCompatActivity() {
         return sensor
 
     }
+    private fun DoorSim(): Int{
+
+        return TODO("Provide the return value")
+    }
 }
